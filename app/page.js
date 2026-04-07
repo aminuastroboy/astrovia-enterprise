@@ -66,72 +66,80 @@ export default function AstroviaEnterpriseWebsite() {
   ];
 
   return (
-    <div className="min-h-screen bg-slate-950 text-white overflow-x-hidden">
-      <div className="fixed inset-0 -z-10 bg-[radial-gradient(circle_at_top,rgba(14,165,233,0.16),transparent_28%),radial-gradient(circle_at_80%_20%,rgba(59,130,246,0.16),transparent_24%),linear-gradient(180deg,#020617_0%,#07101f_45%,#020617_100%)]" />
-      <div className="fixed inset-0 -z-10 opacity-35 bg-[url('data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1400\" height=\"1000\" viewBox=\"0 0 1400 1000\"><g fill=\"white\"><circle cx=\"80\" cy=\"80\" r=\"1.2\"/><circle cx=\"180\" cy=\"130\" r=\"1\"/><circle cx=\"290\" cy=\"65\" r=\"1.4\"/><circle cx=\"420\" cy=\"100\" r=\"1\"/><circle cx=\"530\" cy=\"60\" r=\"1.1\"/><circle cx=\"680\" cy=\"140\" r=\"1\"/><circle cx=\"790\" cy=\"90\" r=\"1.3\"/><circle cx=\"930\" cy=\"70\" r=\"1\"/><circle cx=\"1090\" cy=\"110\" r=\"1.2\"/><circle cx=\"1230\" cy=\"80\" r=\"1\"/><circle cx=\"1330\" cy=\"160\" r=\"1.3\"/><circle cx=\"110\" cy=\"280\" r=\"1\"/><circle cx=\"250\" cy=\"240\" r=\"1.4\"/><circle cx=\"380\" cy=\"300\" r=\"1\"/><circle cx=\"520\" cy=\"260\" r=\"1.1\"/><circle cx=\"670\" cy=\"310\" r=\"1.2\"/><circle cx=\"820\" cy=\"250\" r=\"1\"/><circle cx=\"960\" cy=\"320\" r=\"1.4\"/><circle cx=\"1120\" cy=\"270\" r=\"1.1\"/><circle cx=\"1280\" cy=\"300\" r=\"1\"/><circle cx=\"90\" cy=\"470\" r=\"1.2\"/><circle cx=\"210\" cy=\"420\" r=\"1\"/><circle cx=\"360\" cy=\"500\" r=\"1.4\"/><circle cx=\"510\" cy=\"450\" r=\"1\"/><circle cx=\"650\" cy=\"540\" r=\"1.1\"/><circle cx=\"820\" cy=\"470\" r=\"1.3\"/><circle cx=\"980\" cy=\"530\" r=\"1\"/><circle cx=\"1170\" cy=\"460\" r=\"1.2\"/><circle cx=\"1310\" cy=\"520\" r=\"1\"/><circle cx=\"130\" cy=\"690\" r=\"1.1\"/><circle cx=\"280\" cy=\"640\" r=\"1\"/><circle cx=\"430\" cy=\"730\" r=\"1.4\"/><circle cx=\"620\" cy=\"670\" r=\"1.1\"/><circle cx=\"800\" cy=\"760\" r=\"1\"/><circle cx=\"970\" cy=\"700\" r=\"1.3\"/><circle cx=\"1140\" cy=\"780\" r=\"1\"/><circle cx=\"1300\" cy=\"710\" r=\"1.2\"/></g></svg>')]" />
+    <div className="min-h-screen overflow-x-hidden bg-slate-950 text-white">
+      <div className="fixed inset-0 -z-10 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950" />
+      <div className="fixed inset-0 -z-10 bg-[radial-gradient(circle_at_top,rgba(14,165,233,0.16),transparent_28%),radial-gradient(circle_at_80%_20%,rgba(59,130,246,0.16),transparent_24%)]" />
 
       <header className="sticky top-0 z-50 border-b border-white/10 bg-slate-950/70 backdrop-blur-xl">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
           <a href="#home" className="flex items-center gap-4">
-            <div className="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm flex items-center justify-center shadow-2xl shadow-blue-950/30">
-              <div className="relative w-8 h-8">
-                <div className="absolute inset-0 border-[3px] border-blue-300 rounded-full rotate-[-22deg]" />
-                <div className="absolute left-1 top-1 w-5 h-5 border-t-[18px] border-t-blue-400 border-l-[10px] border-l-transparent border-r-[10px] border-r-transparent" style={{ clipPath: "polygon(50% 0%, 100% 100%, 76% 100%, 50% 46%, 24% 100%, 0% 100%)" }} />
+            <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-white/10 bg-white/5 shadow-2xl shadow-blue-950/30">
+              <div className="relative h-8 w-8">
+                <div className="absolute inset-0 rounded-full border-[3px] border-blue-300 rotate-[-22deg]" />
+                <div
+                  className="absolute left-1 top-1 h-5 w-5 border-l-[10px] border-r-[10px] border-t-[18px] border-l-transparent border-r-transparent border-t-blue-400"
+                  style={{ clipPath: "polygon(50% 0%, 100% 100%, 76% 100%, 50% 46%, 24% 100%, 0% 100%)" }}
+                />
               </div>
             </div>
             <div>
               <div className="text-lg font-bold tracking-[0.22em]">ASTROVIA</div>
-              <div className="text-xs text-blue-200/80 tracking-[0.42em]">ENTERPRISE</div>
+              <div className="text-xs tracking-[0.42em] text-blue-200/80">ENTERPRISE</div>
             </div>
           </a>
 
-          <nav className="hidden lg:flex items-center gap-8 text-sm text-slate-300">
-            <a href="#services" className="hover:text-white transition">Services</a>
-            <a href="#about" className="hover:text-white transition">About</a>
-            <a href="#process" className="hover:text-white transition">Process</a>
-            <a href="#faq" className="hover:text-white transition">FAQ</a>
-            <a href="#contact" className="hover:text-white transition">Contact</a>
+          <nav className="hidden items-center gap-8 text-sm text-slate-300 lg:flex">
+            <a href="#services" className="transition hover:text-white">Services</a>
+            <a href="#about" className="transition hover:text-white">About</a>
+            <a href="#process" className="transition hover:text-white">Process</a>
+            <a href="#faq" className="transition hover:text-white">FAQ</a>
+            <a href="#contact" className="transition hover:text-white">Contact</a>
           </nav>
 
-          <a href="#contact" className="hidden sm:inline-flex rounded-2xl bg-blue-500 px-5 py-2.5 font-semibold text-white shadow-lg shadow-blue-950/30 hover:bg-blue-400 transition">
+          <a
+            href="#contact"
+            className="hidden rounded-2xl bg-blue-500 px-5 py-2.5 font-semibold text-white shadow-lg shadow-blue-950/30 transition hover:bg-blue-400 sm:inline-flex"
+          >
             Let’s Talk
           </a>
         </div>
       </header>
 
       <main id="home">
-        <section className="max-w-7xl mx-auto px-6 pt-14 pb-20 md:pt-20 md:pb-28">
-          <div className="grid lg:grid-cols-[1.15fr_0.85fr] gap-12 items-center">
+        <section className="mx-auto max-w-7xl px-6 pb-20 pt-14 md:pb-28 md:pt-20">
+          <div className="grid items-center gap-12 lg:grid-cols-[1.15fr_0.85fr]">
             <div>
               <div className="inline-flex flex-wrap items-center gap-2 rounded-full border border-blue-300/15 bg-blue-400/10 px-4 py-2 text-sm text-blue-100 shadow-lg shadow-blue-950/20">
                 <span className="h-2 w-2 rounded-full bg-blue-300" />
-                Registered Technology & Software Company
+                Registered Technology &amp; Software Company
               </div>
 
-              <h1 className="mt-7 text-4xl md:text-6xl font-black leading-tight max-w-4xl">
+              <h1 className="mt-7 max-w-4xl text-4xl font-black leading-tight md:text-6xl">
                 Building smart
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-200 via-white to-blue-400"> software and technology </span>
+                <span className="bg-gradient-to-r from-blue-200 via-white to-blue-400 bg-clip-text text-transparent">
+                  {" "}software and technology{" "}
+                </span>
                 solutions for modern businesses.
               </h1>
 
-              <p className="mt-6 text-lg text-slate-300 max-w-2xl leading-8">
+              <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
                 Astrovia Enterprise delivers professional software solutions, fintech integrations, IT support, and digital systems that help businesses operate faster, smarter, and more efficiently.
               </p>
 
-              <p className="mt-5 text-xl text-blue-100 font-medium">
+              <p className="mt-5 text-xl font-medium text-blue-100">
                 Software Excellence. IT Support at Warp Speed.
               </p>
 
               <div className="mt-8 flex flex-wrap gap-4">
-                <a href="#contact" className="rounded-2xl bg-blue-500 px-6 py-3 font-semibold text-white shadow-xl shadow-blue-950/30 hover:bg-blue-400 transition">
+                <a href="#contact" className="rounded-2xl bg-blue-500 px-6 py-3 font-semibold text-white shadow-xl shadow-blue-950/30 transition hover:bg-blue-400">
                   Get Started
                 </a>
-                <a href="#services" className="rounded-2xl border border-white/15 bg-white/5 px-6 py-3 font-semibold text-white hover:bg-white/10 transition">
+                <a href="#services" className="rounded-2xl border border-white/15 bg-white/5 px-6 py-3 font-semibold text-white transition hover:bg-white/10">
                   Explore Services
                 </a>
               </div>
 
-              <div className="mt-10 grid sm:grid-cols-3 gap-4 max-w-3xl">
+              <div className="mt-10 grid max-w-3xl gap-4 sm:grid-cols-3">
                 {stats.map((item) => (
                   <div key={item.label} className="rounded-2xl border border-white/10 bg-white/5 px-4 py-5 text-center backdrop-blur-sm">
                     <div className="text-2xl font-bold text-white">{item.value}</div>
@@ -142,29 +150,35 @@ export default function AstroviaEnterpriseWebsite() {
             </div>
 
             <div className="relative">
-              <div className="absolute inset-0 rounded-full bg-blue-500/20 blur-3xl scale-90" />
-              <div className="relative rounded-[2rem] border border-white/10 bg-white/5 backdrop-blur-xl p-6 shadow-2xl shadow-black/30">
-                <div className="relative overflow-hidden rounded-[1.6rem] border border-white/10 bg-gradient-to-br from-slate-900 via-blue-950 to-slate-950 min-h-[520px]">
+              <div className="absolute inset-0 scale-90 rounded-full bg-blue-500/20 blur-3xl" />
+              <div className="relative rounded-[2rem] border border-white/10 bg-white/5 p-6 shadow-2xl shadow-black/30 backdrop-blur-xl">
+                <div className="relative min-h-[520px] overflow-hidden rounded-[1.6rem] border border-white/10 bg-gradient-to-br from-slate-900 via-blue-950 to-slate-950">
                   <div className="absolute inset-0 bg-[radial-gradient(circle_at_45%_30%,rgba(147,197,253,0.22),transparent_28%),radial-gradient(circle_at_80%_25%,rgba(56,189,248,0.18),transparent_20%),linear-gradient(to_bottom,transparent,rgba(2,6,23,0.5))]" />
                   <div className="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-blue-500/15 to-transparent" />
 
-                  <div className="absolute top-8 left-8 right-8 flex items-center justify-between text-xs uppercase tracking-[0.28em] text-blue-100/70">
+                  <div className="absolute left-8 right-8 top-8 flex items-center justify-between text-xs uppercase tracking-[0.28em] text-blue-100/70">
                     <span>Astrovia Enterprise</span>
                     <span>System Architecture</span>
                   </div>
 
-                  <div className="absolute left-1/2 top-[44%] -translate-x-1/2 -translate-y-1/2 w-[290px] h-[290px]">
-                    <div className="absolute inset-[10px] border-[10px] border-blue-300/95 rounded-full rotate-[-22deg]" />
-                    <div className="absolute inset-[34px] border-[7px] border-blue-500/85 rounded-full rotate-[-22deg]" />
-                    <div className="absolute left-[26%] top-[5%] w-32 h-48 bg-gradient-to-b from-sky-400 to-blue-700" style={{ clipPath: "polygon(50% 0%, 100% 100%, 76% 100%, 50% 46%, 24% 100%, 0% 100%)" }} />
-                    <div className="absolute left-[36%] top-[50%] w-32 h-14 bg-gradient-to-r from-blue-700 to-sky-400" style={{ clipPath: "polygon(0 60%, 56% 0, 100% 20%, 65% 100%, 56% 74%, 12% 100%, 28% 62%)" }} />
+                  <div className="absolute left-1/2 top-[44%] h-[290px] w-[290px] -translate-x-1/2 -translate-y-1/2">
+                    <div className="absolute inset-[10px] rounded-full border-[10px] border-blue-300/95 rotate-[-22deg]" />
+                    <div className="absolute inset-[34px] rounded-full border-[7px] border-blue-500/85 rotate-[-22deg]" />
+                    <div
+                      className="absolute left-[26%] top-[5%] h-48 w-32 bg-gradient-to-b from-sky-400 to-blue-700"
+                      style={{ clipPath: "polygon(50% 0%, 100% 100%, 76% 100%, 50% 46%, 24% 100%, 0% 100%)" }}
+                    />
+                    <div
+                      className="absolute left-[36%] top-[50%] h-14 w-32 bg-gradient-to-r from-blue-700 to-sky-400"
+                      style={{ clipPath: "polygon(0 60%, 56% 0, 100% 20%, 65% 100%, 56% 74%, 12% 100%, 28% 62%)" }}
+                    />
                     <div className="absolute right-[6%] top-[10%] h-5 w-5 rounded-full bg-blue-100 shadow-[0_0_28px_rgba(191,219,254,1)]" />
-                    <div className="absolute left-[8%] bottom-[24%] h-4 w-4 rounded-full bg-blue-400" />
-                    <div className="absolute left-[14%] bottom-[14%] h-2.5 w-2.5 rounded-full bg-blue-600" />
-                    <div className="absolute left-[28%] bottom-[10%] h-4 w-4 rounded-full bg-blue-500" />
+                    <div className="absolute bottom-[24%] left-[8%] h-4 w-4 rounded-full bg-blue-400" />
+                    <div className="absolute bottom-[14%] left-[14%] h-2.5 w-2.5 rounded-full bg-blue-600" />
+                    <div className="absolute bottom-[10%] left-[28%] h-4 w-4 rounded-full bg-blue-500" />
                   </div>
 
-                  <div className="absolute left-8 right-8 bottom-8 grid grid-cols-2 gap-4">
+                  <div className="absolute bottom-8 left-8 right-8 grid grid-cols-2 gap-4">
                     <div className="rounded-2xl border border-white/10 bg-slate-950/50 p-4">
                       <div className="text-sm font-semibold text-white">Software Architecture</div>
                       <div className="mt-1 text-xs text-slate-400">Scalable systems for real business growth.</div>
@@ -180,32 +194,32 @@ export default function AstroviaEnterpriseWebsite() {
           </div>
         </section>
 
-        <section id="services" className="max-w-7xl mx-auto px-6 py-16 md:py-20">
-          <div className="max-w-3xl mb-10">
+        <section id="services" className="mx-auto max-w-7xl px-6 py-16 md:py-20">
+          <div className="mb-10 max-w-3xl">
             <p className="text-sm uppercase tracking-[0.26em] text-blue-200">Our Expertise</p>
-            <h2 className="mt-3 text-3xl md:text-4xl font-bold">Technology services designed to power smarter operations.</h2>
+            <h2 className="mt-3 text-3xl font-bold md:text-4xl">Technology services designed to power smarter operations.</h2>
           </div>
 
-          <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-5">
+          <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
             {services.map((service) => (
-              <div key={service.title} className="rounded-[1.7rem] border border-white/10 bg-white/5 backdrop-blur-md p-6 shadow-xl shadow-black/20 hover:bg-white/10 transition">
-                <div className="w-12 h-12 rounded-2xl border border-blue-300/20 bg-blue-400/15 mb-5" />
+              <div key={service.title} className="rounded-[1.7rem] border border-white/10 bg-white/5 p-6 shadow-xl shadow-black/20 backdrop-blur-md transition hover:bg-white/10">
+                <div className="mb-5 h-12 w-12 rounded-2xl border border-blue-300/20 bg-blue-400/15" />
                 <h3 className="text-xl font-semibold">{service.title}</h3>
-                <p className="mt-3 text-slate-300 leading-7">{service.text}</p>
+                <p className="mt-3 leading-7 text-slate-300">{service.text}</p>
               </div>
             ))}
           </div>
         </section>
 
-        <section id="about" className="max-w-7xl mx-auto px-6 py-16 md:py-20">
-          <div className="grid lg:grid-cols-2 gap-8 items-stretch">
+        <section id="about" className="mx-auto max-w-7xl px-6 py-16 md:py-20">
+          <div className="grid items-stretch gap-8 lg:grid-cols-2">
             <div className="rounded-[2rem] border border-white/10 bg-white/5 p-8 backdrop-blur-md">
               <p className="text-sm uppercase tracking-[0.26em] text-blue-200">About Astrovia</p>
               <h2 className="mt-3 text-3xl font-bold">A registered technology brand built for modern digital solutions.</h2>
-              <p className="mt-5 text-slate-300 leading-8">
+              <p className="mt-5 leading-8 text-slate-300">
                 Astrovia Enterprise blends software thinking, systems architecture, practical IT support, and digital innovation to help businesses and individuals solve real-world technology challenges.
               </p>
-              <p className="mt-5 text-slate-300 leading-8">
+              <p className="mt-5 leading-8 text-slate-300">
                 From software development and fintech workflows to technical support and digital recovery, we focus on practical solutions with a strong professional standard.
               </p>
             </div>
@@ -233,55 +247,55 @@ export default function AstroviaEnterpriseWebsite() {
           </div>
         </section>
 
-        <section id="process" className="max-w-7xl mx-auto px-6 py-16 md:py-20">
-          <div className="max-w-2xl mb-10">
+        <section id="process" className="mx-auto max-w-7xl px-6 py-16 md:py-20">
+          <div className="mb-10 max-w-2xl">
             <p className="text-sm uppercase tracking-[0.26em] text-blue-200">How We Work</p>
-            <h2 className="mt-3 text-3xl md:text-4xl font-bold">A simple process built around clarity and execution.</h2>
+            <h2 className="mt-3 text-3xl font-bold md:text-4xl">A simple process built around clarity and execution.</h2>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-5">
+          <div className="grid gap-5 md:grid-cols-3">
             {process.map((item) => (
-              <div key={item.step} className="rounded-[1.7rem] border border-white/10 bg-white/5 p-6 backdrop-blur-md shadow-xl shadow-black/20">
+              <div key={item.step} className="rounded-[1.7rem] border border-white/10 bg-white/5 p-6 shadow-xl shadow-black/20 backdrop-blur-md">
                 <div className="text-3xl font-black text-blue-300">{item.step}</div>
                 <h3 className="mt-4 text-xl font-semibold">{item.title}</h3>
-                <p className="mt-3 text-slate-300 leading-7">{item.text}</p>
+                <p className="mt-3 leading-7 text-slate-300">{item.text}</p>
               </div>
             ))}
           </div>
         </section>
 
-        <section id="faq" className="max-w-7xl mx-auto px-6 py-16 md:py-20">
-          <div className="max-w-3xl mb-10">
+        <section id="faq" className="mx-auto max-w-7xl px-6 py-16 md:py-20">
+          <div className="mb-10 max-w-3xl">
             <p className="text-sm uppercase tracking-[0.26em] text-blue-200">Frequently Asked Questions</p>
-            <h2 className="mt-3 text-3xl md:text-4xl font-bold">Answers to common questions about Astrovia Enterprise.</h2>
+            <h2 className="mt-3 text-3xl font-bold md:text-4xl">Answers to common questions about Astrovia Enterprise.</h2>
           </div>
 
           <div className="space-y-4">
             {faqs.map((item) => (
-              <div key={item.q} className="rounded-[1.5rem] border border-white/10 bg-white/5 p-6 backdrop-blur-md shadow-xl shadow-black/20">
+              <div key={item.q} className="rounded-[1.5rem] border border-white/10 bg-white/5 p-6 shadow-xl shadow-black/20 backdrop-blur-md">
                 <h3 className="text-lg font-semibold">{item.q}</h3>
-                <p className="mt-3 text-slate-300 leading-7">{item.a}</p>
+                <p className="mt-3 leading-7 text-slate-300">{item.a}</p>
               </div>
             ))}
           </div>
         </section>
 
-        <section id="contact" className="max-w-5xl mx-auto px-6 py-16 md:py-24">
-          <div className="rounded-[2rem] border border-white/10 bg-white/5 backdrop-blur-xl p-8 md:p-12 text-center shadow-2xl shadow-black/30">
+        <section id="contact" className="mx-auto max-w-5xl px-6 py-16 md:py-24">
+          <div className="rounded-[2rem] border border-white/10 bg-white/5 p-8 text-center shadow-2xl shadow-black/30 backdrop-blur-xl md:p-12">
             <p className="text-sm uppercase tracking-[0.26em] text-blue-200">Contact Astrovia</p>
-            <h2 className="mt-3 text-3xl md:text-5xl font-bold">Let’s build your next technology solution.</h2>
-            <p className="mt-5 text-slate-300 max-w-2xl mx-auto leading-8">
+            <h2 className="mt-3 text-3xl font-bold md:text-5xl">Let’s build your next technology solution.</h2>
+            <p className="mx-auto mt-5 max-w-2xl leading-8 text-slate-300">
               Reach out for software projects, fintech integrations, IT support services, and digital solutions tailored to your business goals.
             </p>
 
-            <div className="mt-8 grid md:grid-cols-3 gap-4 text-left">
+            <div className="mt-8 grid gap-4 text-left md:grid-cols-3">
               <div className="rounded-2xl border border-white/10 bg-slate-950/40 p-5">
                 <div className="text-sm text-slate-400">Phone</div>
                 <div className="mt-2 text-lg font-semibold">07081197352</div>
               </div>
               <div className="rounded-2xl border border-white/10 bg-slate-950/40 p-5">
                 <div className="text-sm text-slate-400">Email</div>
-                <div className="mt-2 text-lg font-semibold break-all">aminuastroboy@gmail.com</div>
+                <div className="mt-2 break-all text-lg font-semibold">aminuastroboy@gmail.com</div>
               </div>
               <div className="rounded-2xl border border-white/10 bg-slate-950/40 p-5">
                 <div className="text-sm text-slate-400">Location</div>
@@ -290,10 +304,10 @@ export default function AstroviaEnterpriseWebsite() {
             </div>
 
             <div className="mt-8 flex flex-wrap justify-center gap-4">
-              <a href="mailto:aminuastroboy@gmail.com" className="rounded-2xl bg-white px-6 py-3 font-semibold text-slate-950 hover:bg-slate-200 transition">
+              <a href="mailto:aminuastroboy@gmail.com" className="rounded-2xl bg-white px-6 py-3 font-semibold text-slate-950 transition hover:bg-slate-200">
                 Email Us
               </a>
-              <a href="tel:07081197352" className="rounded-2xl border border-white/15 bg-transparent px-6 py-3 font-semibold text-white hover:bg-white/10 transition">
+              <a href="tel:07081197352" className="rounded-2xl border border-white/15 bg-transparent px-6 py-3 font-semibold text-white transition hover:bg-white/10">
                 Call Now
               </a>
             </div>
@@ -301,8 +315,8 @@ export default function AstroviaEnterpriseWebsite() {
         </section>
       </main>
 
-      <footer className="border-t border-white/10 mt-8">
-        <div className="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-400">
+      <footer className="mt-8 border-t border-white/10">
+        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-6 py-8 text-sm text-slate-400 md:flex-row">
           <p>© 2026 Astrovia Enterprise. All rights reserved.</p>
           <p>Software Excellence. IT Support at Warp Speed.</p>
         </div>
