@@ -1,9 +1,12 @@
+import "./globals.css";
+
 export const metadata = {
   title: "Astrovia Enterprise",
-  description: "Astrovia Enterprise delivers software solutions, fintech integrations, IT support, and digital systems for modern businesses.",
+  description: "Astrovia Enterprise delivers modern software, fintech integrations, and IT support for businesses.",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
-
-import "./globals.css";
 
 export default function RootLayout({ children }) {
   return (
